@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Briefing </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title"> Briefing </h1>
+  <p id="description"> Para uma melhor elaboração do projeto, preencha os campos corretamento com as informações solicitadas </p>
+
+  <form id="survey-from">
+    <fieldset>
+      <legend> Informações Pessoais </legend>
+      <label for="employeeName">
+        Nome do Colaborador <input id="employeeName" name="employeeName" type="text" required />
+      </label>
+      <label for="company">
+        Empresa <input id="company" name="company" type="text" required />
+      </label>
+      <label for="email">
+        Email Corporativo <input id="email" name="email" type="email" required />
+      </label>
+      <label for="category">
+        Categoria do ramo <select id="category" name="category">
+          <option value="">(selecione um)</option>
+          <option value="1">Comércio</option>
+          <option value="2">Indústria</option>
+          <option value="3">Serviços</option>
+          <option value="4">Outros</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend> Público Alvo </legend>
+      <label for="gender"> Gênero </label>
+
+      <input type="radio" id="maleGender" name="gender" value="male" required>
+      <label for="maleGender">Masculino</label>
+
+      <input type="radio" id="femaleGender" name="gender" value="female" required>
+      <label for="femaleGender">Feminino</label>
+
+      <input type="radio" id="otherGender" name="gender" value="other" required>
+      <label for="otherGender">Outro</label>
+
+      <label for="age">
+        Faixa de Idade
+        <input id="age" type="radio" name="age" class="inline" checked /> 0-18 anos </label>
+        <label for="age">
+        <input id="age" type="radio" name="age" class="inline" checked /> 18-30 anos </label>
+        <label for="age">
+        <input id="age" type="radio" name="age" class="inline" checked /> 30-50 anos </label>
+        <label for="age">
+        <input id="age" type="radio" name="age" class="inline" checked /> 50 anos ou mais
+      </label>
+      Escolaridade <select id="education" name="education">
+        <option value="">(selecione um)</option>
+        <option value="1">Ensino Fundamental</option>
+        <option value="2">Ensino Médio</option>
+        <option value="3">Ensino Superior</option>
+        <option value="4">Não possui</option>
+      </select>
+      </label>
+
+      <label for="place">
+        Localização <input id="place" name="place" type="text">
+      </label>
+
+      <label for="occupation">
+        Profissão <input id="occupation" name="occupation" type="text">
+      </label>
+
+      <label for="income">
+        Renda Média <select id="income" name="income">
+          <option value="">(selecione um)</option>
+          <option value="1">Até 1 salário mínimo</option>
+          <option value="2">1 a 2 salários mínimos</option>
+          <option value="3">2 a 3 salários mínimos</option>
+          <option value="4">Mais de 3 salários mínimos</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend> Informações sobre o projeto </legend>
+      <label for="project"> Nome do projeto <input id="project" name="project" type="text" required />
+      </label>
+      <label for="objective"> Objetivo <textarea id="objective" name="objective" rows="3" cols="30"
+          placeholder="O principal objetivo desse projeto é..."></textarea>
+      </label>
+      <label for="goal"> Meta <textarea id="goal" name="goal" rows="3" cols="30"
+          placeholder="Meta de pequeno, médio e longo prazo..."></textarea>
+      </label>
+      <label for="risks"> Riscos <textarea id="risks" name="risks" rows="3" cols="30"
+          placeholder="Os principais riscos do projeto são..."></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend> Cronograma </legend>
+      <label for="startDate">
+        Prazo inicial <input id="startDate" name="startDate" type="date" />
+      </label>
+      <label for="endDate"> Prazo final <input id="endDate" name="endDate" type="date" /></label>
+    </fieldset>
+
+    Confirme todas as informações antes de enviar.
+
+    <input type="submit" value="Enviar"/> 
+
+  </form>
+  Agradeço a sua colaboração!
+  Um briefing de qualidade é o primeiro passo para garantir a entrega de um serviço de qualidade e que, principalmente,
+  atenda às suas expectativas.
+</body>
+
+</html>
